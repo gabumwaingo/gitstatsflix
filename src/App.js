@@ -7,11 +7,15 @@ import Footer from './components/Footer';
 import RepositoriesPage from './components/RepositoriesPage'; // Import my RepositoriesPage component
 import StatsPage from './components/StatsPage'; // Import my StatsPage component
 import CollaborationPage from './components/CollaborationPage'; // Import  CollaborationPage component
+import Home from './components/Home';
+import Callback from './components/Callback';
 
 function App() {
     return (
         <Router>
             <div>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/callback" component={Callback} />
                 <Header />
                 <Navigation />
                 <Switch>
